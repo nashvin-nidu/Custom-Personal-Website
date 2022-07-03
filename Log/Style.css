@@ -189,4 +189,7 @@
   color: #b8b4b4;
   text-decoration: none;
 }
-
+.typing{
+ color :tomato;
+ letter-spacing: 3px;
+}

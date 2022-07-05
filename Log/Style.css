@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Work+Sans:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans&display=swap');
+.text-header-link{
+  color: tomato;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  padding-right: 1.5em !important;
+  font-family: 'Bebas Neue', cursive;
+  transition: 0.5s;
+}
+.text-header-link:hover{
+  color: rgb(242, 186, 176);
+  font-weight: 600;
+  letter-spacing: 10px;
+  font-size: 1.7em;
+}
 
 .intro-container{
   align-items: center;
@@ -18,6 +34,11 @@
   color: aquamarine;
   font-family: 'Work Sans', sans-serif; 
   font-weight:bold;
+  transition: 0.5s;
+}
+.text-name:hover{
+  letter-spacing: 9px;
+
 }
 
 .text-description{
@@ -29,26 +50,21 @@
   line-height: 2em;
 }
 
-.contain-about-sec{
-  display: grid;
-  grid-template-columns: repeat(2,16em);
-  grid-template-rows: repeat(1,6em);
-}
-
 .text-grid{
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.text-about-size{
-  font-size: 1em;
-  color: #fff;
-  font-weight: 500;
-}
 .text-aqua{
  color: aqua;
 }
-.text-me-contain{
-  margin-top: 1em;
+.about-text{
+  font-family: 'Noto Sans', sans-serif;
+  color: #c7c7c7;
+  font-size: 1.2em;
+  transition:2s;
+}
+.about-text:hover{
+  letter-spacing: 2px;
 }
 .icon-tag{
   display: inline-block;
@@ -56,21 +72,48 @@
   font-size: 4em;
 }
 
-
 .Card{
   width: 11em;
   height: 11em;
   border-radius: 1em;
+  transition: 00.5s;
 }
+.Card:hover{
+  width: 15em;
+  height: 15em;
+}
+
 .Card-center{
   width: 11rem;
   height: 11rem;
   border-radius: 1em;
+  transition: 00.5s;
+}
+.Card-center:hover{
+  width: 15em;
+  height: 15em;
 }
 .Card-Skill{
   width: 11em;
   height: 11em;
-  border-radius: 1em
+  object-fit: cover;
+  border-radius: 1em;
+
+}
+.card-transition{
+  transition: 0.5s;
+}
+.card-transition:hover{
+  width: 15em;
+  height: 15em;
+}
+.card-soci-transition{
+  transition: 0.5s;
+  object-fit: contain;
+}
+.card-soci-transition:hover{  
+  width: 7em;
+  height: 7em;
 }
 .border-radius{
   border-radius: 1em;
@@ -78,6 +121,7 @@
 }
 .border-soci{
   border-radius: 1.5em;
+  
 }
 .set-center{
   display: flex; 
@@ -102,7 +146,7 @@
 .contact-size{
   width: 100%;
   height: 4em;
-  border-radius: 1em;
+  border-radius: 0.7em;
   margin-bottom: 3em;
   background-color: aqua;
 }
@@ -111,7 +155,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-
 }
 .contact-links{
   text-decoration: none;
@@ -126,7 +169,7 @@
 .form-input{
   width: 100%;
   height: 45px;
-  border-radius: 1em;
+  border-radius: 0.5em;
   padding-left: 1em;
   font-weight: bold;
   border:none;

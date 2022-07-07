@@ -16,7 +16,6 @@
   letter-spacing: 10px;
   font-size: 1.7em;
 }
-
 .intro-container{
   align-items: center;
 }
@@ -24,22 +23,29 @@
   border-radius: 1em;
   width: 20em;
   height: 20em;
-  box-shadow: 1px 1px 116px 50px #00bdb873;
+  box-shadow: 1px 1px 70px 50px #00bdb873;
 }
 
 .text-name{
   display: block; 
-  letter-spacing:5px;
+  letter-spacing: 15px;
   font-size: 3em;
   color: aquamarine;
   font-family: 'Work Sans', sans-serif; 
   font-weight:bold;
-  transition: 0.5s;
-}
-.text-name:hover{
-  letter-spacing: 9px;
+  animation: letter 1.5s 900ms forwards;
+  }
 
-}
+@keyframes letter{
+  0%{
+    letter-spacing: 15px;
+  }
+  100%{
+   letter-spacing: 5px;
+  }
+} 
+
+
 
 .text-description{
   font-family: 'Montserrat', sans-serif;
@@ -56,15 +62,27 @@
 }
 .text-aqua{
  color: aqua;
+ animation: text-aqua 1s 700ms forwards ;
+}
+@keyframes text-aqua{
+  0%{
+   letter-spacing: 50px;
+  }
+  100%{
+   letter-spacing: 4px;
+  }
 }
 .about-text{
   font-family: 'Noto Sans', sans-serif;
   color: #c7c7c7;
   font-size: 1.2em;
-  transition:2s;
+  cursor: none;
+  animation: about-text 1s 700ms forwards ;
 }
-.about-text:hover{
-  letter-spacing: 2px;
+@keyframes about-text{
+  100%{
+   letter-spacing: 4px;
+  }
 }
 .icon-tag{
   display: inline-block;
@@ -76,8 +94,34 @@
   width: 11em;
   height: 11em;
   border-radius: 1em;
+  object-fit: cover;
   transition: 00.5s;
+  animation: card 1.5s 1s  ease-in forwards;
 }
+
+@keyframes card{
+ 0%{
+  opacity: 0%;
+  left: 0;
+ }
+ 25%{
+  opacity: 25%;
+  left: 25;
+ }
+ 50%{
+  opacity: 50%;
+  left: 50;
+ }
+ 75%{
+  opacity: 75%;
+  left: 75;
+ }
+ 100%{
+  opacity: 100%;
+  left: 100%;
+ }
+}
+
 .Card:hover{
   width: 15em;
   height: 15em;
@@ -88,7 +132,32 @@
   height: 11rem;
   border-radius: 1em;
   transition: 00.5s;
+  animation: card-skill 1.5s 1s  ease-in forwards;
 }
+
+@keyframes card-skill{
+ 0%{
+  opacity: 0%;
+  left: 0;
+ }
+ 25%{
+  opacity: 25%;
+  left: 25;
+ }
+ 50%{
+  opacity: 50%;
+  left: 50;
+ }
+ 75%{
+  opacity: 75%;
+  left: 75;
+ }
+ 100%{
+  opacity: 100%;
+  left: 100%;
+ }
+}
+
 .Card-center:hover{
   width: 15em;
   height: 15em;
@@ -98,7 +167,30 @@
   height: 11em;
   object-fit: cover;
   border-radius: 1em;
+  animation: card-skill 1.5s 1s  ease-in forwards;
+}
 
+@keyframes card-skill{
+ 0%{
+  opacity: 0%;
+  left: 0;
+ }
+ 25%{
+  opacity: 25%;
+  left: 25;
+ }
+ 50%{
+  opacity: 50%;
+  left: 50;
+ }
+ 75%{
+  opacity: 75%;
+  left: 75;
+ }
+ 100%{
+  opacity: 100%;
+  left: 100%;
+ }
 }
 .card-transition{
   transition: 0.5s;
@@ -110,7 +202,32 @@
 .card-soci-transition{
   transition: 0.5s;
   object-fit: contain;
+  animation: card-soci 1.5s 1s  ease-in forwards;
 }
+
+@keyframes card-soci{
+ 0%{
+  opacity: 0%;
+  left: 0;
+ }
+ 25%{
+  opacity: 25%;
+  left: 25;
+ }
+ 50%{
+  opacity: 50%;
+  left: 50;
+ }
+ 75%{
+  opacity: 75%;
+  left: 75;
+ }
+ 100%{
+  opacity: 100%;
+  left: 100%;
+ }
+}
+
 .card-soci-transition:hover{  
   width: 7em;
   height: 7em;
@@ -147,7 +264,7 @@
   width: 100%;
   height: 4em;
   border-radius: 0.7em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   background-color: aqua;
 }
 
@@ -158,13 +275,20 @@
 }
 .contact-links{
   text-decoration: none;
-  color: blue;
+  color: #8e8e8e;
   font-weight: bold;
-
+  outline: none;
+  font-size: 1.5em;
+  transition: 400ms;
+}
+.contact-links:hover{
+ color: #c7c7c7;
+ text-decoration: none;
+ font-size: 20px;
 }
 .contact-text{
   font-weight: bold;
-  color: grey;
+  color: aqua;
 }
 .form-input{
   width: 100%;
@@ -173,23 +297,22 @@
   padding-left: 1em;
   font-weight: bold;
   border:none;
+  outline: none;
   text-decoration: none;
   background-color: coral;
 }
 .form-input::placeholder{
   color: #fff;
 }
-.form-input:hover{
+.form-input:hover {
   background-color: #fff;
 }
 .form-input:hover::placeholder{
   color: grey;
 }
 
-
-.form-input:active{
+.form-input:visited{
   background-color: #fff;
-  color: grey;
 }
 
 .textarea-heading{
